@@ -1,0 +1,18 @@
+<!ELEMENT Osoba (punoIme, datumRodjenja, Adresa, Email+)>
+<!ELEMENT punoIme (Ime, srednjeIme?, Prezime+)>
+<!ELEMENT datumRodjenja (Dan, Mesec, Godina)>
+<!ELEMENT Adresa (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+
+<!ELEMENT Ime (#PCDATA)>
+<!ELEMENT srednjeIme (#PCDATA)>
+<!ELEMENT Prezime (#PCDATA)>
+
+<!ELEMENT Dan (#PCDATA)>
+<!ELEMENT Mesec (#PCDATA)>
+<!ELEMENT Godina (#PCDATA)>
+
+<!ATTLIST Adresa odrediste (privremena | stalna) "Privremena">
+<!ATTLIST Email vrsta (sluzbeni | privatni) #IMPLIED>
+
+
